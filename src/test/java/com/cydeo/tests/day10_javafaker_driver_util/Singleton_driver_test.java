@@ -15,7 +15,6 @@ public class Singleton_driver_test {
     public void googleTitle(){
         Driver.getDriver().get("https://google.com");
         System.out.println("google test driver = " + ((RemoteWebDriver) Driver.getDriver()).getSessionId());
-        Driver.closeDriver();
     }
 
     @Test (priority = 2)

@@ -76,11 +76,18 @@ public class DropdownPractices {
 //        5. Deselect all values.
         selectLanguage.deselectAll();
 
-
-
-
     }
 
+    @Test
+    public void testWebsite(){
+        driver.findElement(By.id("dropdownMenuLink")).click();
+        driver.findElement(By.linkText("Facebook")).click();
+
+        String actualURL = driver.getCurrentUrl();
+        String expectedURL = "https://www.facebook.com/";
+
+        Assert.assertEquals(actualURL,expectedURL);
+    }
 
 
 
