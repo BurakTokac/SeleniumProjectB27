@@ -2,10 +2,14 @@ package com.cydeo.tests.day9_properties_configuration_reader;
 
 import com.cydeo.tests.base.TestBase;
 import com.cydeo.utilities.ConfigurationReader;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class T3_Config_Practice extends TestBase {
@@ -13,6 +17,7 @@ public class T3_Config_Practice extends TestBase {
 
     @Test
     public void google_search_test_using_properties(){
+
 
 //        2- Go to: https://google.com
          // driver.get("https://google.com");
